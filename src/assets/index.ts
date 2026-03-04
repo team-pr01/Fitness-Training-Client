@@ -4,6 +4,7 @@ import dumbbell from "../assets/icons/dumbbell.svg";
 
 
 import heroBg from "../assets/images/hero-bg.webp";
+import whyChooseUs from "../assets/images/why-choose-us.webp";
 
 export const ICONS = {
     logo,
@@ -12,5 +13,6 @@ export const ICONS = {
 };
 
 export const IMAGES = {
-    heroBg
+    heroBg,
+    whyChooseUs
 };
