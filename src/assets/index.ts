@@ -7,12 +7,14 @@ import joinStraight from "../assets/icons/join-straight.svg";
 import dataRecovery from "../assets/icons/data-recovery.svg";
 import analytics from "../assets/icons/analytics-down.svg";
 import stopWatch from "../assets/icons/stop-watch.svg";
+import play from "../assets/icons/play.svg";
 
 
 import heroBg from "../assets/images/hero-bg.webp";
 import whyChooseUs from "../assets/images/why-choose-us.webp";
 import trainingPhilosophy from "../assets/images/training-philosophy.webp";
 import strengthFramework from "../assets/images/strength-framework.webp";
+import video from "../assets/images/video.webp";
 
 export const ICONS = {
     logo,
@@ -23,8 +25,9 @@ export const ICONS = {
     joinStraight,
     dataRecovery,
     analytics,
-    stopWatch
-    
+    stopWatch,
+    play
+
 };
 
 export const IMAGES = {
@@ -32,4 +35,5 @@ export const IMAGES = {
     whyChooseUs,
     trainingPhilosophy,
     strengthFramework,
+    video,
 };
