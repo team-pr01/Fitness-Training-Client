@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <div className="bg-neutral-65 py-[100px] font-Manrope">
+    <div className="bg-neutral-65 py-25 font-Manrope">
       <Container>
         <div className="flex items-center justify-between gap-20">
           <h2 className="text-[32px] font-bold text-neutral-5">
