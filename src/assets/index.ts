@@ -8,6 +8,7 @@ import dataRecovery from "../assets/icons/data-recovery.svg";
 import analytics from "../assets/icons/analytics-down.svg";
 import stopWatch from "../assets/icons/stop-watch.svg";
 import play from "../assets/icons/play.svg";
+import arrowTopRight from "../assets/icons/arrow-up-right.svg";
 
 
 import heroBg from "../assets/images/hero-bg.webp";
@@ -15,6 +16,10 @@ import whyChooseUs from "../assets/images/why-choose-us.webp";
 import trainingPhilosophy from "../assets/images/training-philosophy.webp";
 import strengthFramework from "../assets/images/strength-framework.webp";
 import video from "../assets/images/video.webp";
+import personalTraining from "../assets/images/personal-training.webp";
+import strengthProgram from "../assets/images/strength-program.webp";
+import groupTraining from "../assets/images/group-trainng.webp";
+import onlineCoaching from "../assets/images/online-coaching.webp";
 
 export const ICONS = {
     logo,
@@ -26,7 +31,8 @@ export const ICONS = {
     dataRecovery,
     analytics,
     stopWatch,
-    play
+    play,
+    arrowTopRight
 
 };
 
@@ -36,4 +42,8 @@ export const IMAGES = {
     trainingPhilosophy,
     strengthFramework,
     video,
+    personalTraining,
+    strengthProgram,
+    groupTraining,
+    onlineCoaching
 };
