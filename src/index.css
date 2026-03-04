@@ -29,12 +29,9 @@
   --color-neutral-40: #070723;
   --color-neutral-45: #0C0C13;
   --color-neutral-50: #3D3D42;
+  --color-neutral-55: #F5F5F5;
+  --color-neutral-60: #00000026;
 
-  /* accent */
-  --color-accent-10: #f17556;
-  --color-accent-20: #d61349;
-  --color-accent-25: #ffcece;
-  --color-accent-30: #ae0000;
 
   /* Shadows */
   /* --shadow-job-card: 0 4px 12px 0 rgba(2, 45, 80, 0.08);

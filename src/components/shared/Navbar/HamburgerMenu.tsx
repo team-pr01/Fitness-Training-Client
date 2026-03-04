@@ -1,25 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
-import { ICONS } from "../../../assets";
 import { navLinks } from "./navlinks";
 import { RxCross2 } from "react-icons/rx";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { useCurrentUser } from "../../../redux/Features/Auth/authSlice";
-import type { TLoggedInUser } from "../../../types/loggedinUser.types";
+import { ICONS } from "../../../assets";
 
 const HamburgerMenu = () => {
   const location = useLocation();
-  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
-  const user = useSelector(useCurrentUser) as TLoggedInUser;
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
 
-  const dashboardPath =
-    user?.role === "tutor"
-      ? "tutor"
-      : user?.role === "admin"
-      ? "admin"
-      : user?.role === "guardian"
-      ? "guardian"
-      : "staff";
   const toggleHamburgerMenu = () => {
     setIsHamburgerOpen(!isHamburgerOpen);
   };
@@ -72,7 +60,7 @@ const HamburgerMenu = () => {
 
       {/* Side Menu */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 bg-white py-8 p-6 w-[300px] overflow-y-auto transition-all duration-300 transform flex flex-col items-start justify-between ${
+        className={`fixed inset-y-0 right-0 z-50 bg-white py-8 p-6 w-75 overflow-y-auto transition-all duration-300 transform flex flex-col items-start justify-between ${
           isHamburgerOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -106,30 +94,21 @@ const HamburgerMenu = () => {
           </div>
         </div>
 
-        {/* Auth Buttons */}
-        {user ? (
+        {/* Buttons */}
+        <div className="flex flex-col gap-3 w-full text-center">
           <a
-            href={`/dashboard/${dashboardPath}/home`}
+            href="/signin"
             className="py-2 px-4 border border-primary-10 rounded-md text-primary-40 font-medium"
           >
-            Dashboard
+            Sign In
           </a>
-        ) : (
-          <div className="flex flex-col gap-3 w-full text-center">
-            <a
-              href="/signin"
-              className="py-2 px-4 border border-primary-10 rounded-md text-primary-40 font-medium"
-            >
-              Sign In
-            </a>
-            <a
-              href="/signup/tutor"
-              className="py-2 px-4 bg-primary-10 text-white rounded-md font-medium"
-            >
-              Become A Tutor
-            </a>
-          </div>
-        )}
+          <a
+            href="/signup/tutor"
+            className="py-2 px-4 bg-primary-10 text-white rounded-md font-medium"
+          >
+            Become A Tutor
+          </a>
+        </div>
       </div>
     </div>
   );
